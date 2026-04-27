@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "packetdebug",
+  "version": "${version}",
+  "name": "Packet Simulator & Debugger",
+  "description": "Client-side packet simulation and outgoing packet interception toolkit for local admin debugging.",
+  "authors": [
+    "PacketDebug"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.packetdebug.PacketDebugMod"
+    ]
+  },
+  "mixins": [
+    "packetdebug.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
